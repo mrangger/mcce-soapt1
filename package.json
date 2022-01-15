@@ -1,0 +1,16 @@
+{
+   "name": "mcce-soapt-team-j",
+   "version": "1.0.0",
+   "description": "Node.js on Docker",
+   "author": "Mathias Rangger, Stephan Pilwax",
+   "main": "index.js",
+   "dependencies": {
+      "axios": "^0.24.0",
+      "express": "*",
+      "pug": "^3.0.2",
+      "redis": "2.8.0"
+   },
+   "scripts": {
+      "start": "node index.js"
+   }
+}

@@ -1,0 +1,30 @@
+html
+  head
+    title= title
+  body
+    h1 Das aktuelle Wetter in #{json.name}: #{json.weather.description}
+    p 
+      | Die aktuelle Temperatur beträgt 
+      strong #{json.main.temp} Grad C
+      | , die gefühlte Temperatur ist 
+      strong #{json.main.feels_like} Grad C
+      
+    p 
+      strong Luftdruck: 
+      | #{json.main.pressure} hPa
+      
+    p 
+      strong Luftfeuchtigkeit: 
+      | #{json.main.humidity} %
+
+    p 
+      strong Windgeschwindigkeit: 
+      | #{json.wind.speed} m/s
+      
+    p 
+      strong Datenquelle: 
+      | #{dataSource}
+    
+    pre(class='prettyprint') #{jsonPretty}
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+

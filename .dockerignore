@@ -1,0 +1,6 @@
+*~
+package-lock.json
+Dockerfile
+docker-compose.yaml
+node_modules
+npm-debug.log
